@@ -1,0 +1,17 @@
+.name {
+  color: #65e665;
+}
+
+.btnSignout {
+  background-color: transparent;
+  border: none;
+  color: #838383;
+  cursor: pointer;
+  margin-left: 5px;
+  padding: 0;
+}
+
+button:focus,
+button:focus-visible {
+  outline: none;
+}
