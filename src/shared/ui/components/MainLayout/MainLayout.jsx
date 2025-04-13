@@ -5,7 +5,7 @@ import { useAuth } from '@app/Provider'
 
 import { Menu } from '../Menu'
 import { User } from '../User'
-import { ErrorBoundary } from '../ErrorBoundary'
+import { ErrorBoundaryWithRouter } from '../../../hoc'
 
 export function MainLayout() {
   const auth = useAuth()
@@ -23,11 +23,11 @@ export function MainLayout() {
         <User user={auth.user} signout={signout} />
       </Menu>
 
-      <ErrorBoundary>
+      <ErrorBoundaryWithRouter>
         <Suspense fallback={<p>Загрузка страницы...</p>}>
           <Outlet />
         </Suspense>
-      </ErrorBoundary>
+      </ErrorBoundaryWithRouter>
     </>
   )
 }

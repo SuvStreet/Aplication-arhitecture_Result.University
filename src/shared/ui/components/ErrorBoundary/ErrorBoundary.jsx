@@ -16,6 +16,12 @@ class ErrorBoundary extends Component {
     console.log('info', info)
   }
 
+  componentDidUpdate(prevProps) {
+    if (this.props.location !== prevProps.location) {
+      this.setState({ hasError: false })
+    }
+  }
+
   render() {
     if (this.state.hasError) {
       return <h1>Ой, что-то пошло не так.</h1>
