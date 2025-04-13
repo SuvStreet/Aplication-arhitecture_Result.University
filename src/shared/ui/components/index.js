@@ -1,2 +1,5 @@
 export * from './MainLayout'
 export * from './PrivateRoute'
+export * from './ErrorBoundary'
+export * from './Button'
+export * from './User'
