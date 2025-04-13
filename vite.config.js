@@ -12,6 +12,7 @@ export default defineConfig({
       '@shared': '/src/shared',
       '@pages': '/src/Pages',
       '@app': '/src/App',
+      '@features': '/src/Features',
     },
   },
 })
