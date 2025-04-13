@@ -8,7 +8,7 @@ export const User = ({ user, signout }) => (
       'Незнакомец'
     ) : (
       <>
-        Привет,<span className={s.name}> {user}</span>/ 
+        Привет,<span className={s.name}> {user}</span> /
         <Button className={s.btnSignout} onClick={signout} text="Выход" />
       </>
     )}
