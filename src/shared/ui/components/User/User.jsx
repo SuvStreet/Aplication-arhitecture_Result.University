@@ -9,7 +9,13 @@ export const User = ({ user, signout }) => (
     ) : (
       <>
         Привет,<span className={s.name}> {user}</span> /
-        <Button className={s.btnSignout} onClick={signout} text="Выход" />
+        <Button
+          onClick={signout}
+          variant="transparent"
+          color="rgba(255, 0, 0, 1)"
+        >
+          Выход
+        </Button>
       </>
     )}
   </div>
