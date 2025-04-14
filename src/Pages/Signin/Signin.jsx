@@ -61,7 +61,14 @@ export const Signin = () => {
         {signinInputs.map((input, index) => (
           <TextInput key={index} error={errors[input.nameInput]} {...input} />
         ))}
-        <Button text="Авторизоваться" />
+        <Button
+          type="submit"
+          variant="filled"
+          size="md"
+          color="green"
+        >
+          Авторизоваться
+        </Button>
       </form>
     </div>
   )
